@@ -3,7 +3,6 @@ def build_graph(num_roads: int) -> dict:
     Build a graph of cities and roads with distances.
 
     Args:
-        num_cities (int): Number of cities.
         num_roads (int): Number of roads.
 
     Returns:
@@ -106,7 +105,7 @@ def main() -> None:
             print("Количество дорог должно быть неотрицательным")
             return
 
-        graph = build_graph(num_cities, num_roads)
+        graph = build_graph(num_roads)
 
         last_line = input().strip()
         cities = last_line.split()
